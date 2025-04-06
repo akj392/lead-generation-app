@@ -13,19 +13,11 @@ export class LeadListingComponent implements OnInit {
 
   leads: Lead[] = [];
 
-  constructor(
-    private leadService: LeadService,
-    private router: Router
-  ) { }
+  constructor(private leadService: LeadService) { }
 
   ngOnInit(): void {
     this.leadService.getLeads()
       .pipe(take(1))
       .subscribe(leads => this.leads = leads);
   }
-
-  onCreate() {
-    this.router.navigate(['lead', 'create']);
-  }
-
 }

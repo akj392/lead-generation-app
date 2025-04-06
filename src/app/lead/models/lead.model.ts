@@ -3,13 +3,14 @@ export class Lead {
   id: string;
   name: string;
   phone: number;
-  email?: string;
+  email: string;
   address?: string;
 
   constructor(obj?: any) {
     this.id = generateUUID(obj?.id);
     this.name = obj?.name;
     this.phone = obj?.phone;
+    this.email = obj?.email;
     this.address = obj?.address;
   }
 }
