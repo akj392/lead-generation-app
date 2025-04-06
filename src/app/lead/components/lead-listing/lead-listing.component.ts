@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { take } from 'rxjs';
+import { LeadService } from '../../services';
+import { Lead } from '../../models';
 
 @Component({
   selector: 'app-lead-listing',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeadListingComponent implements OnInit {
 
-  constructor() { }
+  leads: Lead[] = [];
+
+  constructor(
+    private leadService: LeadService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.leadService.getLeads()
+      .pipe(take(1))
+      .subscribe(leads => this.leads = leads);
+  }
+
+  onCreate() {
+    this.router.navigate(['lead', 'create']);
   }
 
 }

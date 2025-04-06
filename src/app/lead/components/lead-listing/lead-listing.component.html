@@ -1,1 +1,27 @@
-<p>lead-listing works!</p>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <h1 class="col-4">Leads:({{leads.length}})</h1>
+    <div class="col-8 text-end">
+      <button class="btn col-4 btn-primary"
+              (click)="onCreate()">Create Lead</button>
+    </div>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lead of leads">
+        <td>{{lead.id}}</td>
+        <td>{{lead.name}}</td>
+        <td>{{lead.phone}}</td>
+        <td>{{lead.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LeadService } from '../../services';
 
 @Component({
   selector: 'app-lead-form',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeadFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly leadService: LeadService) { }
 
   ngOnInit(): void {
   }
