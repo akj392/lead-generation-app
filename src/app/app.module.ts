@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LeadFormComponent, LeadListingComponent } from './lead';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeadListingComponent,
+    LeadFormComponent
   ],
   imports: [
     BrowserModule,
