@@ -1,11 +1,74 @@
 {
   "leads": [
     {
-      "id": "ec83d6fa-bd7a-4e01-a2b6-f014e10aa620",
-      "name": "testing",
-      "phone": "1233232435",
-      "email": "testing@gmail.com",
-      "address": "testing"
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "name": "Tech Innovations Inc.",
+      "phone": "9876543210",
+      "email": "contact@techinnovations.com",
+      "address": "123 Tech Lane, Silicon Valley, CA"
+    },
+    {
+      "id": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "name": "Green Solutions LLC",
+      "phone": "4567891230",
+      "email": "info@greensolutions.com",
+      "address": "456 Green St, Eco City, NY"
+    },
+    {
+      "id": "c3d4e5f6-g7h8-9012-cdef-g34567890123",
+      "name": "Global Marketing Group",
+      "phone": "3216549870",
+      "email": "hello@globalmarketing.com",
+      "address": "789 Market Ave, Business District, TX"
+    },
+    {
+      "id": "d4e5f6g7-h8i9-0123-defg-h45678901234",
+      "name": "Creative Designs Co.",
+      "phone": "2345678901",
+      "email": "support@creativedesigns.com",
+      "address": "101 Design Blvd, Art Town, FL"
+    },
+    {
+      "id": "e5f6g7h8-i9j0-1234-efgh-i56789012345",
+      "name": "Health First Services",
+      "phone": "8765432109",
+      "email": "contact@healthfirst.com",
+      "address": "202 Health St, Wellness City, IL"
+    },
+    {
+      "id": "f6g7h8i9-j0k1-2345-fghi-j67890123456",
+      "name": "Finance Solutions Group",
+      "phone": "5432167890",
+      "email": "info@financesolutions.com",
+      "address": "303 Finance Ave, Money Town, NV"
+    },
+    {
+      "id": "g7h8i9j0-k1l2-3456-ghij-k78901234567",
+      "name": "Innovative Tech Labs",
+      "phone": "6789012345",
+      "email": "contact@innovativetech.com",
+      "address": "404 Innovation Rd, Tech City, WA"
+    },
+    {
+      "id": "h8i9j0k1-l2m3-4567-hijk-l89012345678",
+      "name": "Eco-Friendly Products",
+      "phone": "8901234567",
+      "email": "sales@ecofriendly.com",
+      "address": "505 Eco St, Green Valley, OR"
+    },
+    {
+      "id": "i9j0k1l2-m3n4-5678-ijkl-m90123456789",
+      "name": "Travel Adventures Co.",
+      "phone": "2345678901",
+      "email": "info@traveladventures.com",
+      "address": "606 Travel Blvd, Adventure City, CO"
+    },
+    {
+      "id": "j0k1l2m3-n4o5-6789-jklm-n01234567890",
+      "name": "Culinary Delights Inc.",
+      "phone": "3456789012",
+      "email": "contact@culinarydelights.com",
+      "address": "707 Culinary St, Foodie Town, MA"
     }
   ]
 }

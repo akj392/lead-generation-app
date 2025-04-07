@@ -1,12 +1,14 @@
 import { TestBed } from '@angular/core/testing';
-
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { LeadService } from './lead.service';
 
 describe('LeadService', () => {
   let service: LeadService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [HttpClient, HttpHandler]
+    });
     service = TestBed.inject(LeadService);
   });
 

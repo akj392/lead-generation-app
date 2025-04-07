@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { take } from 'rxjs';
@@ -8,15 +8,15 @@ import { Lead } from '../../models';
 @Component({
   selector: 'app-lead-form',
   templateUrl: './lead-form.component.html',
-  styleUrls: ['./lead-form.component.scss']
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LeadFormComponent implements OnInit {
 
   leadForm: FormGroup;
 
   constructor(
-    private fb: FormBuilder,
     private router: Router,
+    private fb: FormBuilder,
     private leadService: LeadService
   ) { }
 
