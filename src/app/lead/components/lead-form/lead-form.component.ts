@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { take } from 'rxjs';
@@ -17,10 +18,12 @@ export class LeadFormComponent implements OnInit {
   constructor(
     private router: Router,
     private fb: FormBuilder,
+    private titleService: Title,
     private leadService: LeadService
   ) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle('LeadCreate');
     this.leadForm = this.initializeLeadForm();
   }
 
@@ -32,8 +35,8 @@ export class LeadFormComponent implements OnInit {
   onCreate() {
     const lead = new Lead(this.leadForm.value);
     this.leadService.addLead(lead)
-      .pipe(take(1))
-      .subscribe(() => this.router.navigateByUrl('/lead'));
+      ?.pipe(take(1))
+      ?.subscribe(() => this.router.navigateByUrl('/lead'));
   }
 
   initializeLeadForm() {

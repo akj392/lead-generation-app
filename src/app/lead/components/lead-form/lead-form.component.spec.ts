@@ -6,7 +6,7 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 describe('LeadFormComponent', () => {
   const mockLeadService = {
-    addLead: () => of()
+    addLead: () => of({})
   };
   let component: LeadFormComponent;
   let fixture: ComponentFixture<LeadFormComponent>;

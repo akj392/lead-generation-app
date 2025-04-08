@@ -15,7 +15,6 @@ export class Lead {
   }
 }
 
-
 const generateUUID = (id?: string): string => {
   if (id) {
     return id;
